@@ -1,9 +1,10 @@
 # 📧 Cover Letter  Generator
-Cover Letter generator for applying to companies using groq, langchain and streamlit. It allows users to input the URL of a company's careers page. The tool then extracts job requirements and skills from that page and generates personalized email to the hiring manager in English and German. These letters include relevant Skills and experiences sourced from a vector database, based on the specific job descriptions and can be sent to the desired company over an email. 
+Cover Letter generator for applying to companies using groq, langchain and streamlit. It allows users to input the URL of a company's careers page. The tool then extracts job requirements and skills from that page and generates personalized email to the hiring manager in English and German. These letters include relevant Skills and experiences sourced from a vector database, based on the specific job descriptions and can be sent to the desired company over an email in both english and german. 
 
 **Imagine a scenario:**
 
 - You are applying for a Data scientist role from the website stepstone. You copy the job link from the website and paste it, and click on generate letter in different languages, either German or english. Review the content of the email and it is ready to send to the manager. Happy Job Hunting!!
+
 ![img.png](imgs/screenshot.png)
 
 ## Architecture Diagram
