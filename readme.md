@@ -4,7 +4,7 @@ Cover Letter generator for applying to companies using groq, langchain and strea
 **Imagine a scenario:**
 
 - You are applying for a Data scientist role from the website stepstone. You copy the job link from the website and paste it, and click on generate letter in different languages, either German or english. Review the content of the email and it is ready to send to the manager. Happy Job Hunting!!
-![img.png](imgs/img.png)
+![img.png](imgs/screenshot.png)
 
 ## Architecture Diagram
 ![img.png](imgs/architecture.png)
@@ -23,6 +23,10 @@ Cover Letter generator for applying to companies using groq, langchain and strea
    streamlit run app/main.py
    ```
    
+## Reference
+Thank you Dhaval Patel and codebasics for the amazing tutorial and helping me in the learning process. 
+Please find the complete repo on https://github.com/codebasics/project-genai-cold-email-generator
+with a different implemenation of Email generator with a different LLM model. 
 
 **Additional Terms:**
 This software is licensed under the MIT License. However, commercial use of this software is strictly prohibited without prior written permission from the author. Attribution must be given in all copies or substantial portions of the software.
