@@ -21,7 +21,7 @@ class Portfolio:
 
     def query_links(self, skills):
         result_list=[]
-        for key, value in skills.items():
+        for key, value in skills[0].items():
             value = self.collection.query(query_texts=key, n_results=2).get('metadatas', [])
             result_list.append(value)
         return result_list[0]

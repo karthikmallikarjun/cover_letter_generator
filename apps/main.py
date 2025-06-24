@@ -26,8 +26,8 @@ def create_streamlit_app(llm, portfolio, clean_text):
             links = portfolio.query_links(jobs)
             email = llm.write_mail_english(jobs, links)
             #st.code(email, language='markdown')
-            st.text_area("Code Block", email, height=800)
-            st.code("Cover letter generated successfully.")
+            st.text_area("Code Block", email, height=600)
+            st.code("Cover letter generated successfully in English.")
 
         except Exception as e:
             st.error(f"An Error Occurred: {e}")
@@ -41,8 +41,8 @@ def create_streamlit_app(llm, portfolio, clean_text):
             jobs = llm.extract_jobs(data)   
             links = portfolio.query_links(jobs)
             email = llm.write_mail_german(jobs, links)
-            st.text_area("Code Block", email, height=800)
-            st.code("Cover letter generated successfully.")
+            st.text_area("Code Block", email, height=600)
+            st.code("Cover letter generated successfully in German.")
     
         except Exception as e:
             st.error(f"An Error Occurred: {e}")

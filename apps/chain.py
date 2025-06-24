@@ -11,8 +11,8 @@ load_dotenv()
 class Chain:
     def __init__(self):
         self.llm = ChatGroq(
-            #model="deepseek-r1-distill-llama-70b",
-            model="llama-3.3-70b-specdec",	
+            #model="deepseek-r1-distill-llama-70b", Please make sure you used the latest model from https://console.groq.com/.
+            model="llama3-8b-8192",	
             api_key=os.getenv("GROQ_API_KEY"),
             temperature=0.0)
         
@@ -51,7 +51,7 @@ class Chain:
         ### INSTRUCTION:
         You are XXX, a Data scientist with 8 years of industry experience in different domains of work. 
         You are applying for the job with the {job_description}.
-        Your job is to write a cover in English in about 500 words to the recruiting manager of the job mentioned above describing your capability of fulfilling 
+        Your job is to write a cover in English in about 500 words only to the recruiting manager of the job mentioned above describing your capability of fulfilling 
         their needs and your motivation to work fro the company. You can also give examples from the experience before to make it more 
         natural and effective. Also add the most relevant skill from the following skills to showcase your portfolio: {link_list}
         Remember you are XXX, a data scientist.
@@ -73,7 +73,7 @@ class Chain:
         ### INSTRUCTION:
         You are XXX, a Data scientist with 8 years of industry experience in different domains of work. 
         You are applying for the job with the {job_description}.
-        Your job is to write a cover in German in about 500 words to the recruiting manager of the job mentioned above describing your capability of fulfilling 
+        Your job is to write a cover in German in about 500 words only to the recruiting manager of the job mentioned above describing your capability of fulfilling 
         their needs and your motivation to work fro the company. You can also give examples from the experience before to make it more 
         natural and effective. Also add the most relevant skill from the following skills to showcase your portfolio: {link_list}
         Remember you are XXX, a data scientist.
